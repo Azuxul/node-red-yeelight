@@ -1,0 +1,18 @@
+{
+  "name": "node-red-yeelight",
+  "version": "1.0.0",
+  "main": "yeelight.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "azuxul",
+  "description": "",
+  "dependencies": {
+    "yeelight-platform": "1.0.9"
+  },
+  "node-red" : {
+    "nodes": {
+      "yeelight": "yeelight.js"
+    }
+  }
+}

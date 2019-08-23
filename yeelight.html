@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('yeelight',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            lamp_id: {value:""},
+            method: {value:"toggle"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-lightbulb-o",
+        label: function() {
+            return this.name||"yeelight";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="yeelight">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+	</div>
+	<div class="form-row">
+		<label for="node-input-prefix"><i class="icon-tag"></i> lamp_id</label>
+		<input type="text" id="node-input-lamp_id">	
+	</div>
+	<div class="form-row">
+		<label for="node-input-prefix"><i class="icon-tag"></i> method</label>
+		<input type="text" id="node-input-method">
+	</div>
+</script>
+
+<script type="text/x-red" data-help-name="yeelight">
+    <p>Yeelight toogle</p>
+</script>
