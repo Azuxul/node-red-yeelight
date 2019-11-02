@@ -1,12 +1,13 @@
 {
   "name": "node-red-yeelight",
   "version": "1.1.0",
+  "description": "Node red package to interact with Yeelight lamps on your local network.",
+  "keywords": [ "node-red", "yeelight", "smarthome", "lamps", "leds", "yeelight-api" ],
   "main": "yeelight.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "azuxul",
-  "description": "",
   "dependencies": {
     "dgram": "1.0.1",
     "net": "1.0.2"
